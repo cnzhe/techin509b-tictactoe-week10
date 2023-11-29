@@ -24,7 +24,7 @@ class Game:
             from bot import Bot
             self.bot = Bot()
 
-    def record_winner(self):
+    def record_winner(self, first_square):
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         winner_data = {
             'Timestamp': timestamp,
@@ -33,6 +33,7 @@ class Game:
             'Player_O': 'Human' if self.mode == 'two' else 'Bot' if self.player == 'X' else 'Human',
             'Mode': self.mode,
             'Moves_Played': self.moves,
+            'First_Played_Square': first_square,
         }
 
         # Create the CSV file if it doesn't exist
@@ -40,7 +41,8 @@ class Game:
         is_new_file = not os.path.isfile(csv_file_path)
 
         with open(csv_file_path, mode='a', newline='') as file:
-            writer = csv.DictWriter(file, fieldnames=['Timestamp', 'Winner', 'Player_X', 'Player_O', 'Mode', 'Moves_Played'])
+            fieldnames = ['Timestamp', 'Winner', 'Player_X', 'Player_O', 'Mode', 'Moves_Played', 'First_Played_Square']
+            writer = csv.DictWriter(file, fieldnames=fieldnames)
 
             if is_new_file:
                 writer.writeheader()  # Write header only if the file is newly created
@@ -56,6 +58,7 @@ class Game:
                 print("-" * 9)
 
     def play(self):
+        first_square = None
         while self.winner is None and self.moves < 9:
             # Show the board to the user
             self.print_board()
@@ -67,6 +70,10 @@ class Game:
             else:
                 row = int(input("Enter the row (0, 1, or 2): "))
                 col = int(input("Enter the column (0, 1, or 2): "))
+
+            # Record the first played square
+            if first_square is None:
+                first_square = (row, col)
 
             if self.board[row][col] is not None:
                 print("Invalid move. Cell already occupied.")
@@ -86,7 +93,7 @@ class Game:
   
             # Log the winner
             if self.winner:
-                self.record_winner()
+                self.record_winner(first_square)
 
 
         # Show the final board to the user.

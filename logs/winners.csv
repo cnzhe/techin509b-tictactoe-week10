@@ -1,16 +1,31 @@
-Timestamp,Winner,Player_X,Player_O,Mode,Moves_Played
-2023-11-22 14:57:22,X,Bot,Human,single,5
-2023-11-22 14:57:45,X,Bot,Human,single,5
-2023-11-22 14:58:03,X,Bot,Human,single,7
-2023-11-22 14:58:21,X,Bot,Human,single,5
-2023-11-22 14:58:39,X,Human,Human,two,5
-2023-11-22 14:59:55,O,Human,Human,two,6
-2023-11-22 15:10:46,X,Bot,Human,single,7
-2023-11-22 15:11:04,O,Human,Human,two,6
-2023-11-22 15:13:03,X,Bot,Human,single,7
-2023-11-22 15:13:22,O,Human,Bot,single,8
-2023-11-22 15:13:55,X,Bot,Human,single,7
-2023-11-22 15:14:26,X,Bot,Human,single,9
-2023-11-22 15:15:13,O,Human,Bot,single,6
-2023-11-22 15:15:23,X,Bot,Human,single,5
-2023-11-22 15:17:10,X,Bot,Human,single,9
+Timestamp,Winner,Player_X,Player_O,Mode,Moves_Played,First_Played_Square
+2023-11-28 21:29:26,X,Bot,Human,single,5,"(1, 1)"
+2023-11-28 21:31:10,X,Bot,Human,single,5,"(0, 0)"
+2023-11-28 21:51:18,O,Human,Bot,single,8,"(1, 1)"
+2023-11-28 21:52:18,X,Bot,Human,single,7,"(0, 2)"
+2023-11-28 21:52:46,O,Human,Bot,single,8,"(1, 0)"
+2023-11-28 21:53:03,X,Bot,Human,single,7,"(2, 1)"
+2023-11-28 21:53:24,X,Bot,Human,single,7,"(1, 0)"
+2023-11-28 21:53:39,X,Bot,Human,single,5,"(2, 1)"
+2023-11-28 21:54:09,X,Bot,Human,single,5,"(2, 2)"
+2023-11-28 21:54:36,X,Bot,Human,single,9,"(1, 0)"
+2023-11-28 21:54:48,O,Human,Bot,single,6,"(2, 2)"
+2023-11-28 21:55:00,X,Bot,Human,single,5,"(0, 0)"
+2023-11-28 21:55:30,O,Human,Bot,single,6,"(1, 2)"
+2023-11-28 21:55:41,X,Bot,Human,single,5,"(1, 1)"
+2023-11-28 21:56:16,O,Human,Bot,single,6,"(2, 2)"
+2023-11-28 21:56:31,O,Human,Bot,single,8,"(2, 0)"
+2023-11-28 21:56:44,X,Bot,Human,single,9,"(1, 1)"
+2023-11-28 21:56:58,X,Bot,Human,single,7,"(1, 2)"
+2023-11-28 21:57:22,X,Bot,Human,single,7,"(0, 0)"
+2023-11-28 21:57:52,O,Human,Bot,single,8,"(0, 2)"
+2023-11-28 21:58:08,X,Bot,Human,single,5,"(1, 0)"
+2023-11-28 21:58:19,O,Human,Bot,single,6,"(1, 1)"
+2023-11-28 21:58:39,X,Bot,Human,single,5,"(1, 2)"
+2023-11-28 21:58:55,X,Bot,Human,single,7,"(2, 0)"
+2023-11-28 21:59:05,X,Bot,Human,single,5,"(2, 1)"
+2023-11-28 21:59:21,X,Bot,Human,single,7,"(1, 1)"
+2023-11-28 21:59:32,O,Human,Bot,single,6,"(2, 2)"
+2023-11-28 22:00:15,X,Bot,Human,single,7,"(1, 1)"
+2023-11-28 22:00:25,X,Bot,Human,single,5,"(2, 2)"
+2023-11-28 22:01:11,X,Bot,Human,single,7,"(1, 2)"
